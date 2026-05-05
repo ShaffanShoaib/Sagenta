@@ -109,9 +109,18 @@
       "complexity": "M",
       "epic": "EPIC-003",
       "updated_at": "2026-05-05T16:44:55.516Z"
+    },
+    {
+      "id": "T-13",
+      "path": ".repomind/tickets/T-13-simple-demo-website-creation.md",
+      "title": "Simple Demo Website Creation",
+      "status": "backlog",
+      "priority": "medium",
+      "complexity": "M",
+      "updated_at": "2026-05-05T16:57:02.555Z"
     }
   ],
-  "last_commit": "665212d48168a971257317e7262b3f2d1aa652d4",
-  "updated_at": "2026-05-05T16:53:13.215Z",
-  "checksum": "7de02dc5fae2640975371cd5d70be597355e1cee9c8e46d4cf26f75ae7cd39c3"
+  "last_commit": "f4b0b81ffdacce784bc88e4593e11b24b80c336b",
+  "updated_at": "2026-05-05T16:57:07.116Z",
+  "checksum": "e9afcbb27621bdc1f68a8a5896ae9c32a3096ae8d2c3a30049ee4605d88bc461"
 }
