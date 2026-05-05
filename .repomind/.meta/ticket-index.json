@@ -1,6 +1,16 @@
 {
   "tickets": [
     {
+      "id": "T-002",
+      "path": ".repomind/tickets/EPIC-001/T-002-set-up-oauth-client-for-github.md",
+      "title": "Set up OAuth client for GitHub",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "M",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-05T16:44:55.516Z"
+    },
+    {
       "id": "T-003",
       "path": ".repomind/tickets/EPIC-001/T-003-create-oauth-login-endpoints.md",
       "title": "Create OAuth login endpoints",
@@ -58,16 +68,6 @@
       "priority": "high",
       "complexity": "M",
       "epic": "EPIC-002",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-009",
-      "path": ".repomind/tickets/EPIC-003/T-009-design-session-management-page.md",
-      "title": "Design session management page",
-      "status": "todo",
-      "priority": "medium",
-      "complexity": "M",
-      "epic": "EPIC-003",
       "updated_at": "2026-05-05T16:44:55.516Z"
     },
     {
@@ -222,6 +222,6 @@
   ],
   "adrs": [],
   "last_commit": "35a3b3f6b2cf601dfd88624794130674ad3f3a46",
-  "updated_at": "2026-05-05T19:44:07.099Z",
-  "checksum": "2c4fbe8ad29553b3f4409bc5652fa5ed9bc37eb3bb6f0567d35459eefa09563b"
+  "updated_at": "2026-05-05T19:44:07.593Z",
+  "checksum": "457d36df3469b1b0504452150d88d124bfea8cfe4ca7113fa8685654e52aebb5"
 }
