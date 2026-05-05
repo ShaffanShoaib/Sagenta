@@ -114,10 +114,10 @@
       "id": "T-13",
       "path": ".repomind/tickets/T-13-simple-demo-website-creation.md",
       "title": "Simple Demo Website Creation",
-      "status": "todo",
+      "status": "done",
       "priority": "medium",
       "complexity": "M",
-      "updated_at": "2026-05-05T16:57:43.137Z"
+      "updated_at": "2026-05-05T17:18:54.840Z"
     },
     {
       "id": "T-001",
@@ -230,7 +230,7 @@
       "updated_at": "2026-05-05T17:15:31.081Z"
     }
   ],
-  "last_commit": "54ada13952d507f93d2631575cc0f461d12b6b7b",
-  "updated_at": "2026-05-05T17:15:41.036Z",
-  "checksum": "86983998fc322c44961737960f532a99999909d85947af9c16229968ba5c5443"
+  "last_commit": "dd009ffa55d3689c3497b84031a22e6cc3f9976a",
+  "updated_at": "2026-05-05T17:18:59.457Z",
+  "checksum": "922611ee44d3ac2ec11766b9ab8590ec9fa6073d09aa2efeac06e734c9ce6a8a"
 }
