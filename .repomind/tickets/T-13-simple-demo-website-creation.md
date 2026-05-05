@@ -1,7 +1,7 @@
 ---
 id: T-13
 title: Simple Demo Website Creation
-status: done
+status: todo
 priority: medium
 complexity: M
 commits: []
@@ -9,7 +9,7 @@ blocked_by: []
 blocks: []
 tags: []
 created_at: 2026-05-05T16:57:02.555Z
-updated_at: 2026-05-05T17:18:54.840Z
+updated_at: 2026-05-05T17:30:33.994Z
 requires_migration: false
 requires_env_var: []
 depends_on: []
