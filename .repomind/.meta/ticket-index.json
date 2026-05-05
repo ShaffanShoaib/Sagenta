@@ -118,9 +118,119 @@
       "priority": "medium",
       "complexity": "M",
       "updated_at": "2026-05-05T16:57:43.137Z"
+    },
+    {
+      "id": "T-001",
+      "path": ".repomind/tickets/EPIC-001/T-001-initialize-project-with-basic-structure.md",
+      "title": "Initialize Project with Basic Structure",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "XS",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-002",
+      "path": ".repomind/tickets/EPIC-001/T-002-set-up-version-control.md",
+      "title": "Set Up Version Control",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "XS",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-003",
+      "path": ".repomind/tickets/EPIC-001/T-003-configure-development-environment.md",
+      "title": "Configure Development Environment",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "S",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-004",
+      "path": ".repomind/tickets/EPIC-002/T-004-design-and-implement-database-schema.md",
+      "title": "Design and Implement Database Schema",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "M",
+      "epic": "EPIC-002",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-005",
+      "path": ".repomind/tickets/EPIC-002/T-005-create-user-authentication-service.md",
+      "title": "Create User Authentication Service",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "L",
+      "epic": "EPIC-002",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-006",
+      "path": ".repomind/tickets/EPIC-002/T-006-implement-restful-api-endpoints.md",
+      "title": "Implement RESTful API Endpoints",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "L",
+      "epic": "EPIC-002",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-007",
+      "path": ".repomind/tickets/EPIC-003/T-007-design-and-implement-ui-components.md",
+      "title": "Design and Implement UI Components",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-008",
+      "path": ".repomind/tickets/EPIC-003/T-008-create-main-application-pages.md",
+      "title": "Create Main Application Pages",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-009",
+      "path": ".repomind/tickets/EPIC-003/T-009-integrate-state-management.md",
+      "title": "Integrate State Management",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-010",
+      "path": ".repomind/tickets/EPIC-004/T-010-set-up-continuous-integration-and-deployment.md",
+      "title": "Set Up Continuous Integration and Deployment",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-004",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-011",
+      "path": ".repomind/tickets/EPIC-004/T-011-configure-monitoring-and-logging.md",
+      "title": "Configure Monitoring and Logging",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-004",
+      "updated_at": "2026-05-05T17:15:31.081Z"
     }
   ],
-  "last_commit": "4f9a8ae7b63bec43231641e6e78fad9ae87d616c",
-  "updated_at": "2026-05-05T16:57:47.351Z",
-  "checksum": "ae6ddb8a5c885febba597dc89f5e7cfa3c3033956069537c3c45af912c08175f"
+  "last_commit": "54ada13952d507f93d2631575cc0f461d12b6b7b",
+  "updated_at": "2026-05-05T17:15:41.036Z",
+  "checksum": "86983998fc322c44961737960f532a99999909d85947af9c16229968ba5c5443"
 }
