@@ -11,7 +11,7 @@ blocks: []
 tags:
   - auth-service
 created_at: 2026-05-05T16:44:55.516Z
-updated_at: 2026-05-05T16:44:55.516Z
+updated_at: 2026-05-05T16:53:05.581Z
 arch_layer: service
 risk_level: medium
 requires_migration: false
