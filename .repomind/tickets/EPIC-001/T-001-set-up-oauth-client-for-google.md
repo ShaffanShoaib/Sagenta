@@ -2,7 +2,7 @@
 id: T-001
 epic: EPIC-001
 title: Set up OAuth client for Google
-status: todo
+status: in-progress
 priority: high
 complexity: M
 commits: []
@@ -11,7 +11,7 @@ blocks: []
 tags:
   - auth-service
 created_at: 2026-05-05T16:44:55.516Z
-updated_at: 2026-05-05T16:53:05.581Z
+updated_at: 2026-05-05T16:53:05.933Z
 arch_layer: service
 risk_level: medium
 requires_migration: false
