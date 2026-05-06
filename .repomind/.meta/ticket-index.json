@@ -41,16 +41,6 @@
       "updated_at": "2026-05-05T17:15:31.081Z"
     },
     {
-      "id": "T-006",
-      "path": ".repomind/tickets/EPIC-002/T-006-implement-restful-api-endpoints.md",
-      "title": "Implement RESTful API Endpoints",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "L",
-      "epic": "EPIC-002",
-      "updated_at": "2026-05-05T17:15:31.081Z"
-    },
-    {
       "id": "T-007",
       "path": ".repomind/tickets/EPIC-003/T-007-design-and-implement-ui-components.md",
       "title": "Design and Implement UI Components",
@@ -122,7 +112,7 @@
     }
   ],
   "adrs": [],
-  "last_commit": "0cf79146d800a60387b8a0619fc15c432032438d",
-  "updated_at": "2026-05-06T10:43:16.772Z",
-  "checksum": "afb3ea2be3bc8e5ae937c33a2cc0593d94d164316ea7bf27fe6c9d8b10b98253"
+  "last_commit": "597f1eb193bd61d9cf4688a563a2588aeef8ffa1",
+  "updated_at": "2026-05-06T11:25:37.835Z",
+  "checksum": "c7e99348742a124a706c4fb348a90c39519fc5677d3c33ecee4fe822538dcfd1"
 }
