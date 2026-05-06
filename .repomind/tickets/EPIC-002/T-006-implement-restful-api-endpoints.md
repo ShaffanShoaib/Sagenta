@@ -2,7 +2,7 @@
 id: T-006
 epic: EPIC-002
 title: Implement RESTful API Endpoints
-status: todo
+status: in-progress
 priority: high
 complexity: L
 commits: []
@@ -10,7 +10,7 @@ blocked_by: []
 blocks: []
 tags: []
 created_at: 2026-05-05T17:15:31.081Z
-updated_at: 2026-05-05T17:15:31.081Z
+updated_at: 2026-05-06T11:25:33.375Z
 arch_layer: api
 risk_level: medium
 requires_migration: false
