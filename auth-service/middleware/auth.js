@@ -4,7 +4,7 @@ const { verifyToken } = require('../utils/tokens');
  * Middleware to authenticate requests using JWT.
  */
 const authenticate = (req, res, next) => {
-  const token = req.cookies.token || (req.headers.authorization && req.headers.authorization.split(' ')[1]);
+  const token = req.cookies.accessToken || (req.headers.authorization && req.headers.authorization.split(' ')[1]);
 
   if (!token) {
     return res.status(401).json({ message: 'Authentication required' });
@@ -21,7 +21,6 @@ const authenticate = (req, res, next) => {
 
 /**
  * Middleware to authorize requests based on roles.
- * @param {Array} roles - Allowed roles.
  */
 const authorize = (roles = []) => {
   return (req, res, next) => {
