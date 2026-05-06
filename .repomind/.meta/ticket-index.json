@@ -34,11 +34,11 @@
       "id": "T-005",
       "path": ".repomind/tickets/EPIC-002/T-005-create-user-authentication-service.md",
       "title": "Create User Authentication Service",
-      "status": "todo",
+      "status": "in_progress",
       "priority": "high",
       "complexity": "L",
       "epic": "EPIC-002",
-      "updated_at": "2026-05-05T17:15:31.081Z"
+      "updated_at": "2026-05-06T13:26:46.344Z"
     },
     {
       "id": "T-007",
@@ -112,7 +112,7 @@
     }
   ],
   "adrs": [],
-  "last_commit": "67b988cfe974b49099a9f5fbb12dfcc19b4d9af8",
-  "updated_at": "2026-05-06T13:18:37.935Z",
-  "checksum": "c7e99348742a124a706c4fb348a90c39519fc5677d3c33ecee4fe822538dcfd1"
+  "last_commit": "e9b62ce9976b11fbfe0e319f60db74a695739e2a",
+  "updated_at": "2026-05-06T13:26:52.375Z",
+  "checksum": "a50f4b9aeec38aed32ae91166590880b286fe68f4f28e1802d940db99470154e"
 }
