@@ -2,7 +2,7 @@
 id: T-005
 epic: EPIC-002
 title: Create User Authentication Service
-status: todo
+status: in-progress
 priority: high
 complexity: L
 commits: []
@@ -10,7 +10,7 @@ blocked_by: []
 blocks: []
 tags: []
 created_at: 2026-05-05T17:15:31.081Z
-updated_at: 2026-05-05T17:15:31.081Z
+updated_at: 2026-05-06T13:18:33.083Z
 arch_layer: service
 risk_level: critical
 requires_migration: false
