@@ -2,125 +2,6 @@
   "tickets": [
     {
       "id": "T-002",
-      "path": ".repomind/tickets/EPIC-001/T-002-set-up-oauth-client-for-github.md",
-      "title": "Set up OAuth client for GitHub",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "M",
-      "epic": "EPIC-001",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-003",
-      "path": ".repomind/tickets/EPIC-001/T-003-create-oauth-login-endpoints.md",
-      "title": "Create OAuth login endpoints",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "L",
-      "epic": "EPIC-001",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-004",
-      "path": ".repomind/tickets/EPIC-001/T-004-integrate-oauth-login-with-frontend.md",
-      "title": "Integrate OAuth login with frontend",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "M",
-      "epic": "EPIC-001",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-005",
-      "path": ".repomind/tickets/EPIC-002/T-005-design-jwt-structure-and-lifecycle.md",
-      "title": "Design JWT structure and lifecycle",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "L",
-      "epic": "EPIC-002",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-006",
-      "path": ".repomind/tickets/EPIC-002/T-006-implement-jwt-generation-and-verification.md",
-      "title": "Implement JWT generation and verification",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "L",
-      "epic": "EPIC-002",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-007",
-      "path": ".repomind/tickets/EPIC-002/T-007-create-refresh-token-endpoints.md",
-      "title": "Create refresh token endpoints",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "M",
-      "epic": "EPIC-002",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-008",
-      "path": ".repomind/tickets/EPIC-002/T-008-integrate-token-refresh-with-frontend.md",
-      "title": "Integrate token refresh with frontend",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "M",
-      "epic": "EPIC-002",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-010",
-      "path": ".repomind/tickets/EPIC-003/T-010-implement-session-management-backend.md",
-      "title": "Implement session management backend",
-      "status": "todo",
-      "priority": "medium",
-      "complexity": "L",
-      "epic": "EPIC-003",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-011",
-      "path": ".repomind/tickets/EPIC-003/T-011-create-session-management-api-endpoints.md",
-      "title": "Create session management API endpoints",
-      "status": "todo",
-      "priority": "medium",
-      "complexity": "M",
-      "epic": "EPIC-003",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-012",
-      "path": ".repomind/tickets/EPIC-003/T-012-integrate-session-management-with-frontend.md",
-      "title": "Integrate session management with frontend",
-      "status": "todo",
-      "priority": "medium",
-      "complexity": "M",
-      "epic": "EPIC-003",
-      "updated_at": "2026-05-05T16:44:55.516Z"
-    },
-    {
-      "id": "T-13",
-      "path": ".repomind/tickets/T-13-simple-demo-website-creation.md",
-      "title": "Simple Demo Website Creation",
-      "status": "todo",
-      "priority": "medium",
-      "complexity": "M",
-      "updated_at": "2026-05-05T17:30:33.994Z"
-    },
-    {
-      "id": "T-001",
-      "path": ".repomind/tickets/EPIC-001/T-001-initialize-project-with-basic-structure.md",
-      "title": "Initialize Project with Basic Structure",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "XS",
-      "epic": "EPIC-001",
-      "updated_at": "2026-05-05T17:15:31.081Z"
-    },
-    {
-      "id": "T-002",
       "path": ".repomind/tickets/EPIC-001/T-002-set-up-version-control.md",
       "title": "Set Up Version Control",
       "status": "todo",
@@ -190,16 +71,6 @@
       "updated_at": "2026-05-05T17:15:31.081Z"
     },
     {
-      "id": "T-009",
-      "path": ".repomind/tickets/EPIC-003/T-009-integrate-state-management.md",
-      "title": "Integrate State Management",
-      "status": "todo",
-      "priority": "medium",
-      "complexity": "M",
-      "epic": "EPIC-003",
-      "updated_at": "2026-05-05T17:15:31.081Z"
-    },
-    {
       "id": "T-010",
       "path": ".repomind/tickets/EPIC-004/T-010-set-up-continuous-integration-and-deployment.md",
       "title": "Set Up Continuous Integration and Deployment",
@@ -218,10 +89,40 @@
       "complexity": "M",
       "epic": "EPIC-004",
       "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-012",
+      "path": ".repomind/tickets/EPIC-003/T-012-integrate-session-management-with-frontend.md",
+      "title": "Integrate session management with frontend",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-05T16:44:55.516Z"
+    },
+    {
+      "id": "T-001",
+      "path": ".repomind/tickets/EPIC-001/T-001-initialize-project-with-basic-structure.md",
+      "title": "Initialize Project with Basic Structure",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "XS",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-05T17:15:31.081Z"
+    },
+    {
+      "id": "T-009",
+      "path": ".repomind/tickets/EPIC-003/T-009-integrate-state-management.md",
+      "title": "Integrate State Management",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-05T17:15:31.081Z"
     }
   ],
   "adrs": [],
-  "last_commit": "35a3b3f6b2cf601dfd88624794130674ad3f3a46",
-  "updated_at": "2026-05-05T19:44:07.593Z",
-  "checksum": "457d36df3469b1b0504452150d88d124bfea8cfe4ca7113fa8685654e52aebb5"
+  "last_commit": "0cf79146d800a60387b8a0619fc15c432032438d",
+  "updated_at": "2026-05-06T10:43:16.772Z",
+  "checksum": "afb3ea2be3bc8e5ae937c33a2cc0593d94d164316ea7bf27fe6c9d8b10b98253"
 }
