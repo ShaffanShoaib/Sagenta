@@ -1,318 +1,13 @@
 {
   "modules": [
     {
-      "id": "auth-service/server",
-      "path": "auth-service/server.js",
-      "name": "AUTH_SERVICE_SERVER",
-      "summary": "Sets up and runs the Express authentication service with routes and middleware.",
-      "layer": "api",
-      "dependencies": [
-        "./routes/auth",
-        "./middleware/auth"
-      ],
-      "is_hotspot": true
-    },
-    {
-      "id": "auth-service/middleware/auth",
-      "path": "auth-service/middleware/auth.js",
-      "name": "AUTH_SERVICE_MIDDLEWARE_AUTH",
-      "summary": "Provides Express middleware for JWT authentication and role-based authorization.",
-      "layer": "util",
-      "dependencies": [
-        "../utils/tokens"
-      ],
-      "is_hotspot": true
-    },
-    {
-      "id": "auth-service/utils/tokens",
-      "path": "auth-service/utils/tokens.js",
-      "name": "AUTH_SERVICE_UTILS_TOKENS",
-      "summary": "Manages JWT token generation and verification for access and refresh tokens.",
-      "layer": "util",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": "auth-service/routes/auth",
-      "path": "auth-service/routes/auth.js",
-      "name": "AUTH_SERVICE_ROUTES_AUTH",
-      "summary": "Defines authentication routes for login, token refresh, and logout.",
-      "layer": "api",
-      "dependencies": [
-        "../users",
-        "../utils/tokens",
-        "../middleware/auth"
-      ],
-      "is_hotspot": true
-    },
-    {
-      "id": "auth-service/users",
-      "path": "auth-service/users.js",
-      "name": "AUTH_SERVICE_USERS",
-      "summary": "Provides a hardcoded in-memory user store for testing purposes.",
-      "layer": "data",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/.meta/ticket-index",
-      "path": ".repomind/.meta/ticket-index.json",
-      "name": "REPOMIND_META_TICKET_INDEX",
-      "summary": "Stores an index of all project tickets with metadata.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/.meta/settings",
-      "path": ".repomind/.meta/settings.json",
-      "name": "REPOMIND_META_SETTINGS",
-      "summary": "Contains configuration settings for the Repomind bot.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/.meta/sync-state",
-      "path": ".repomind/.meta/sync-state.json",
-      "name": "REPOMIND_META_SYNC_STATE",
-      "summary": "Stores the synchronization state of the Repomind bot.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".env",
-      "path": ".env",
-      "name": "ENV_CONFIG",
-      "summary": "Environment variables for application configuration.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": ".repomind/adrs/adr-003",
-      "path": ".repomind/adrs/adr-003.md",
-      "name": "REPOMIND_ADRS_ADR_003",
-      "summary": "Documents the architectural decision to use Redux for state management.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/architecture/onboarding",
-      "path": ".repomind/architecture/onboarding.md",
-      "name": "ONBOARDING",
-      "summary": "Placeholder for initial codebase scan architecture documentation.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-002/T-005-design-jwt-structure-and-lifecycle",
-      "path": ".repomind/tickets/EPIC-002/T-005-design-jwt-structure-and-lifecycle.md",
-      "name": "T_005_DESIGN_JWT_STRUCTURE_AND_LIFECYCLE",
-      "summary": "Defines JWT structure, claims, expiration, and lifecycle for rotation and refresh.",
-      "layer": "service",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": "docs/adr/ADR-6025-auth-service/routes/auth",
-      "path": "docs/adr/ADR-6025-auth-service/routes/auth.md",
-      "name": "ADR_6025_AUTH_SERVICE_ROUTES_AUTH",
-      "summary": "Documents improvements to user login and token refresh security.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-004/T-011-configure-monitoring-and-logging",
-      "path": ".repomind/tickets/EPIC-004/T-011-configure-monitoring-and-logging.md",
-      "name": "T_011_CONFIGURE_MONITORING_AND_LOGGING",
-      "summary": "Configures application monitoring and logging for performance tracking and error detection.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "auth-service/package",
-      "path": "auth-service/package.json",
-      "name": "AUTH_SERVICE_PACKAGE",
-      "summary": "Defines auth-service project metadata and dependencies for Node.js application.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "docs/adr/ADR-6212-auth-service/middleware/auth",
-      "path": "docs/adr/ADR-6212-auth-service/middleware/auth.md",
-      "name": "ADR_6212_AUTH_SERVICE_MIDDLEWARE_AUTH",
-      "summary": "Documents JWT authentication and role-based authorization middleware for API security.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-003/T-009-integrate-state-management",
-      "path": ".repomind/tickets/EPIC-003/T-009-integrate-state-management.md",
-      "name": "T_009_INTEGRATE_STATE_MANAGEMENT",
-      "summary": "Integrates a state management solution for efficient application state handling.",
-      "layer": "ui",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-002/T-006-implement-restful-api-endpoints",
-      "path": ".repomind/tickets/EPIC-002/T-006-implement-restful-api-endpoints.md",
-      "name": "T_006_IMPLEMENT_RESTFUL_API_ENDPOINTS",
-      "summary": "Implements RESTful API endpoints for CRUD operations on core entities.",
-      "layer": "api",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": ".repomind/tickets/EPIC-001/T-003-create-oauth-login-endpoints",
-      "path": ".repomind/tickets/EPIC-001/T-003-create-oauth-login-endpoints.md",
-      "name": "T_003_CREATE_OAUTH_LOGIN_ENDPOINTS",
-      "summary": "Creates API endpoints to handle OAuth login requests for Google and GitHub.",
-      "layer": "api",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": ".repomind/releases/sjdkskdj",
-      "path": ".repomind/releases/sjdkskdj.md",
-      "name": "SJDKSKDJ",
-      "summary": "Draft release notes for version \"sjdkskdj\".",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "adr-001",
-      "path": ".repomind/adrs/adr-001.md",
-      "name": "ADR_001",
-      "summary": "Documents decision to use PostgreSQL for reliable, scalable database solution.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "1-2",
-      "path": ".repomind/releases/1-2.md",
-      "name": "RELEASE_1_2",
-      "summary": "Draft release notes for version 1.2, detailing agentic skills.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "config",
-      "path": ".repomind/config.yml",
-      "name": "CONFIG",
-      "summary": "Central configuration for project, AI, changelog, bot, tickets, and integrations.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": "EPIC-001/T-001-initialize-project-with-basic-structure",
-      "path": ".repomind/tickets/EPIC-001/T-001-initialize-project-with-basic-structure.md",
-      "name": "TICKET_EPIC_001_T_001_INITIALIZE_PROJECT_STRUCTURE",
-      "summary": "Task to initialize project with basic structure, directories, and README.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "EPIC-001/T-001-set-up-oauth-client-for-google",
-      "path": ".repomind/tickets/EPIC-001/T-001-set-up-oauth-client-for-google.md",
-      "name": "TICKET_EPIC_001_T_001_SETUP_OAUTH_GOOGLE",
-      "summary": "Task to configure Google OAuth client for authentication service.",
-      "layer": "service",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "EPIC-004/T-010-set-up-continuous-integration-and-deployment",
+      "id": "T-010-set-up-continuous-integration-and-deployment",
       "path": ".repomind/tickets/EPIC-004/T-010-set-up-continuous-integration-and-deployment.md",
-      "name": "TICKET_EPIC_004_T_010_SETUP_CI_CD",
-      "summary": "Task to set up CI/CD pipelines for automated testing and deployment.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "tech-stack",
-      "path": ".repomind/architecture/tech-stack.yml",
-      "name": "TECH_STACK",
-      "summary": "Defines the project's technology stack, including languages, frameworks, databases.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "README",
-      "path": "README.md",
-      "name": "README",
-      "summary": "Project overview for Sagenta, a conversational AI automations system.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "EPIC-001/T-002-set-up-version-control",
-      "path": ".repomind/tickets/EPIC-001/T-002-set-up-version-control.md",
-      "name": "TICKET_EPIC_001_T_002_SETUP_VERSION_CONTROL",
-      "summary": "Task to initialize Git repository and set up version control.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "adr-002",
-      "path": ".repomind/adrs/adr-002.md",
-      "name": "ADR_002",
-      "summary": "Documents decision to use JWT for secure, flexible, stateless authentication.",
-      "layer": "service",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-004-design-and-implement-database-schema",
-      "path": ".repomind/tickets/EPIC-002/T-004-design-and-implement-database-schema.md",
-      "name": "T-004-DESIGN-AND-IMPLEMENT-DATABASE-SCHEMA",
-      "summary": "EPIC-002/T-004-design-and-implement-database-schema module",
+      "name": "T-010-SET-UP-CONTINUOUS-INTEGRATION-AND-DEPLOYMENT",
+      "summary": "EPIC-004/T-010-set-up-continuous-integration-and-deployment module",
       "layer": "util",
       "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-012-integrate-session-management-with-frontend",
-      "path": ".repomind/tickets/EPIC-003/T-012-integrate-session-management-with-frontend.md",
-      "name": "T-012-INTEGRATE-SESSION-MANAGEMENT-WITH-FRONTEND",
-      "summary": "EPIC-003/T-012-integrate-session-management-with-frontend module",
-      "layer": "util",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-008-create-main-application-pages",
-      "path": ".repomind/tickets/EPIC-003/T-008-create-main-application-pages.md",
-      "name": "T-008-CREATE-MAIN-APPLICATION-PAGES",
-      "summary": "EPIC-003/T-008-create-main-application-pages module",
-      "layer": "util",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-010-implement-session-management-backend",
-      "path": ".repomind/tickets/EPIC-003/T-010-implement-session-management-backend.md",
-      "name": "T-010-IMPLEMENT-SESSION-MANAGEMENT-BACKEND",
-      "summary": "EPIC-003/T-010-implement-session-management-backend module",
-      "layer": "util",
-      "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
@@ -322,78 +17,47 @@
       "summary": "EPIC-002/T-006-implement-jwt-generation-and-verification module",
       "layer": "util",
       "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
-      "id": "T-011-create-session-management-api-endpoints",
-      "path": ".repomind/tickets/EPIC-003/T-011-create-session-management-api-endpoints.md",
-      "name": "T-011-CREATE-SESSION-MANAGEMENT-API-ENDPOINTS",
-      "summary": "EPIC-003/T-011-create-session-management-api-endpoints module",
+      "id": "adr-002",
+      "path": ".repomind/adrs/adr-002.md",
+      "name": "ADR-002",
+      "summary": "adrs/adr-002 module",
       "layer": "util",
       "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
-      "id": "tokens",
-      "path": "docs/adr/ADR-5720-auth-service/utils/tokens.md",
-      "name": "TOKENS",
-      "summary": "utils/tokens module",
-      "layer": "service",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-005-create-user-authentication-service",
-      "path": ".repomind/tickets/EPIC-002/T-005-create-user-authentication-service.md",
-      "name": "T-005-CREATE-USER-AUTHENTICATION-SERVICE",
-      "summary": "EPIC-002/T-005-create-user-authentication-service module",
+      "id": "T-011-configure-monitoring-and-logging",
+      "path": ".repomind/tickets/EPIC-004/T-011-configure-monitoring-and-logging.md",
+      "name": "T-011-CONFIGURE-MONITORING-AND-LOGGING",
+      "summary": "EPIC-004/T-011-configure-monitoring-and-logging module",
       "layer": "util",
       "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
-      "id": "T-004-integrate-oauth-login-with-frontend",
-      "path": ".repomind/tickets/EPIC-001/T-004-integrate-oauth-login-with-frontend.md",
-      "name": "T-004-INTEGRATE-OAUTH-LOGIN-WITH-FRONTEND",
-      "summary": "EPIC-001/T-004-integrate-oauth-login-with-frontend module",
+      "id": "T-012-integrate-session-management-with-frontend",
+      "path": ".repomind/tickets/EPIC-003/T-012-integrate-session-management-with-frontend.md",
+      "name": "T-012-INTEGRATE-SESSION-MANAGEMENT-WITH-FRONTEND",
+      "summary": "EPIC-003/T-012-integrate-session-management-with-frontend module",
       "layer": "util",
       "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
-      "id": "T-007-create-refresh-token-endpoints",
-      "path": ".repomind/tickets/EPIC-002/T-007-create-refresh-token-endpoints.md",
-      "name": "T-007-CREATE-REFRESH-TOKEN-ENDPOINTS",
-      "summary": "EPIC-002/T-007-create-refresh-token-endpoints module",
+      "id": "T-003-create-oauth-login-endpoints",
+      "path": ".repomind/tickets/EPIC-001/T-003-create-oauth-login-endpoints.md",
+      "name": "T-003-CREATE-OAUTH-LOGIN-ENDPOINTS",
+      "summary": "EPIC-001/T-003-create-oauth-login-endpoints module",
       "layer": "util",
       "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-007-design-and-implement-ui-components",
-      "path": ".repomind/tickets/EPIC-003/T-007-design-and-implement-ui-components.md",
-      "name": "T-007-DESIGN-AND-IMPLEMENT-UI-COMPONENTS",
-      "summary": "EPIC-003/T-007-design-and-implement-ui-components module",
-      "layer": "util",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-003-configure-development-environment",
-      "path": ".repomind/tickets/EPIC-001/T-003-configure-development-environment.md",
-      "name": "T-003-CONFIGURE-DEVELOPMENT-ENVIRONMENT",
-      "summary": "EPIC-001/T-003-configure-development-environment module",
-      "layer": "util",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "server",
-      "path": "docs/adr/ADR-4183-auth-service/server.md",
-      "name": "SERVER",
-      "summary": "ADR-4183-auth-service/server module",
-      "layer": "util",
-      "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
@@ -403,15 +67,47 @@
       "summary": "architecture/modules module",
       "layer": "util",
       "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
-      "id": "v1-3",
-      "path": ".repomind/releases/v1-3.md",
-      "name": "V1-3",
-      "summary": "releases/v1-3 module",
+      "id": "tech-stack",
+      "path": ".repomind/architecture/tech-stack.yml",
+      "name": "TECH-STACK",
+      "summary": "architecture/tech-stack module",
       "layer": "util",
       "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "server",
+      "path": "docs/adr/ADR-4183-auth-service/server.md",
+      "name": "SERVER",
+      "summary": "ADR-4183-auth-service/server module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-011-create-session-management-api-endpoints",
+      "path": ".repomind/tickets/EPIC-003/T-011-create-session-management-api-endpoints.md",
+      "name": "T-011-CREATE-SESSION-MANAGEMENT-API-ENDPOINTS",
+      "summary": "EPIC-003/T-011-create-session-management-api-endpoints module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-003-configure-development-environment",
+      "path": ".repomind/tickets/EPIC-001/T-003-configure-development-environment.md",
+      "name": "T-003-CONFIGURE-DEVELOPMENT-ENVIRONMENT",
+      "summary": "EPIC-001/T-003-configure-development-environment module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
@@ -421,6 +117,187 @@
       "summary": "EPIC-002/T-008-integrate-token-refresh-with-frontend module",
       "layer": "util",
       "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-007-design-and-implement-ui-components",
+      "path": ".repomind/tickets/EPIC-003/T-007-design-and-implement-ui-components.md",
+      "name": "T-007-DESIGN-AND-IMPLEMENT-UI-COMPONENTS",
+      "summary": "EPIC-003/T-007-design-and-implement-ui-components module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "auth",
+      "path": "docs/adr/ADR-6025-auth-service/routes/auth.md",
+      "name": "AUTH",
+      "summary": "routes/auth module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "package",
+      "path": "auth-service/package.json",
+      "name": "PACKAGE",
+      "summary": "auth-service/package module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "adr-001",
+      "path": ".repomind/adrs/adr-001.md",
+      "name": "ADR-001",
+      "summary": "adrs/adr-001 module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "tokens",
+      "path": "docs/adr/ADR-5720-auth-service/utils/tokens.md",
+      "name": "TOKENS",
+      "summary": "utils/tokens module",
+      "layer": "service",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-005-create-user-authentication-service",
+      "path": ".repomind/tickets/EPIC-002/T-005-create-user-authentication-service.md",
+      "name": "T-005-CREATE-USER-AUTHENTICATION-SERVICE",
+      "summary": "EPIC-002/T-005-create-user-authentication-service module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "auth",
+      "path": "docs/adr/ADR-6212-auth-service/middleware/auth.md",
+      "name": "AUTH",
+      "summary": "middleware/auth module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "sjdkskdj",
+      "path": ".repomind/releases/sjdkskdj.md",
+      "name": "SJDKSKDJ",
+      "summary": "releases/sjdkskdj module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "1-2",
+      "path": ".repomind/releases/1-2.md",
+      "name": "1-2",
+      "summary": "releases/1-2 module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-010-implement-session-management-backend",
+      "path": ".repomind/tickets/EPIC-003/T-010-implement-session-management-backend.md",
+      "name": "T-010-IMPLEMENT-SESSION-MANAGEMENT-BACKEND",
+      "summary": "EPIC-003/T-010-implement-session-management-backend module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "adr-003",
+      "path": ".repomind/adrs/adr-003.md",
+      "name": "ADR-003",
+      "summary": "adrs/adr-003 module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-005-design-jwt-structure-and-lifecycle",
+      "path": ".repomind/tickets/EPIC-002/T-005-design-jwt-structure-and-lifecycle.md",
+      "name": "T-005-DESIGN-JWT-STRUCTURE-AND-LIFECYCLE",
+      "summary": "EPIC-002/T-005-design-jwt-structure-and-lifecycle module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-001-set-up-oauth-client-for-google",
+      "path": ".repomind/tickets/EPIC-001/T-001-set-up-oauth-client-for-google.md",
+      "name": "T-001-SET-UP-OAUTH-CLIENT-FOR-GOOGLE",
+      "summary": "EPIC-001/T-001-set-up-oauth-client-for-google module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "onboarding",
+      "path": ".repomind/architecture/onboarding.md",
+      "name": "ONBOARDING",
+      "summary": "architecture/onboarding module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-009-integrate-state-management",
+      "path": ".repomind/tickets/EPIC-003/T-009-integrate-state-management.md",
+      "name": "T-009-INTEGRATE-STATE-MANAGEMENT",
+      "summary": "EPIC-003/T-009-integrate-state-management module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-004-integrate-oauth-login-with-frontend",
+      "path": ".repomind/tickets/EPIC-001/T-004-integrate-oauth-login-with-frontend.md",
+      "name": "T-004-INTEGRATE-OAUTH-LOGIN-WITH-FRONTEND",
+      "summary": "EPIC-001/T-004-integrate-oauth-login-with-frontend module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-008-create-main-application-pages",
+      "path": ".repomind/tickets/EPIC-003/T-008-create-main-application-pages.md",
+      "name": "T-008-CREATE-MAIN-APPLICATION-PAGES",
+      "summary": "EPIC-003/T-008-create-main-application-pages module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-006-implement-restful-api-endpoints",
+      "path": ".repomind/tickets/EPIC-002/T-006-implement-restful-api-endpoints.md",
+      "name": "T-006-IMPLEMENT-RESTFUL-API-ENDPOINTS",
+      "summary": "EPIC-002/T-006-implement-restful-api-endpoints module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     },
     {
@@ -430,10 +307,180 @@
       "summary": "tickets/T-13-simple-demo-website-creation module",
       "layer": "util",
       "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "README",
+      "path": "README.md",
+      "name": "README",
+      "summary": "README module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-001-initialize-project-with-basic-structure",
+      "path": ".repomind/tickets/EPIC-001/T-001-initialize-project-with-basic-structure.md",
+      "name": "T-001-INITIALIZE-PROJECT-WITH-BASIC-STRUCTURE",
+      "summary": "EPIC-001/T-001-initialize-project-with-basic-structure module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-007-create-refresh-token-endpoints",
+      "path": ".repomind/tickets/EPIC-002/T-007-create-refresh-token-endpoints.md",
+      "name": "T-007-CREATE-REFRESH-TOKEN-ENDPOINTS",
+      "summary": "EPIC-002/T-007-create-refresh-token-endpoints module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-002-set-up-version-control",
+      "path": ".repomind/tickets/EPIC-001/T-002-set-up-version-control.md",
+      "name": "T-002-SET-UP-VERSION-CONTROL",
+      "summary": "EPIC-001/T-002-set-up-version-control module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "config",
+      "path": ".repomind/config.yml",
+      "name": "CONFIG",
+      "summary": ".repomind/config module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-004-design-and-implement-database-schema",
+      "path": ".repomind/tickets/EPIC-002/T-004-design-and-implement-database-schema.md",
+      "name": "T-004-DESIGN-AND-IMPLEMENT-DATABASE-SCHEMA",
+      "summary": "EPIC-002/T-004-design-and-implement-database-schema module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "server",
+      "path": "auth-service/server.js",
+      "name": "SERVER",
+      "summary": "server utility with 2 imports",
+      "layer": "util",
+      "dependencies": [
+        "auth-service/routes/auth",
+        "auth-service/middleware/auth"
+      ],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "auth",
+      "path": "auth-service/middleware/auth.js",
+      "name": "AUTH",
+      "summary": "auth utility with 1 import",
+      "layer": "util",
+      "dependencies": [
+        "auth-service/utils/tokens"
+      ],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "tokens",
+      "path": "auth-service/utils/tokens.js",
+      "name": "TOKENS",
+      "summary": "utils/tokens module",
+      "layer": "service",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "auth",
+      "path": "auth-service/routes/auth.js",
+      "name": "AUTH",
+      "summary": "auth utility with 3 imports",
+      "layer": "util",
+      "dependencies": [
+        "auth-service/users",
+        "auth-service/utils/tokens",
+        "auth-service/middleware/auth"
+      ],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "users",
+      "path": "auth-service/users.js",
+      "name": "USERS",
+      "summary": "auth-service/users module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "sync-state",
+      "path": ".repomind/.meta/sync-state.json",
+      "name": "SYNC-STATE",
+      "summary": ".meta/sync-state module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "ticket-index",
+      "path": ".repomind/.meta/ticket-index.json",
+      "name": "TICKET-INDEX",
+      "summary": ".meta/ticket-index module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "settings",
+      "path": ".repomind/.meta/settings.json",
+      "name": "SETTINGS",
+      "summary": ".meta/settings module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "",
+      "path": ".env",
+      "name": "",
+      "summary": " module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "v1-3",
+      "path": ".repomind/releases/v1-3.md",
+      "name": "V1-3",
+      "summary": "releases/v1-3 module",
+      "layer": "util",
+      "dependencies": [],
+      "flow_connections": [],
       "is_hotspot": false
     }
   ],
-  "generated_at": "2026-05-11T08:31:51.744Z",
+  "generated_at": "2026-05-11T08:46:46.176Z",
   "strategy": "deep-read",
   "anchor_count": 47
 }
