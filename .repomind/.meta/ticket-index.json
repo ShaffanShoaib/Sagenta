@@ -38,7 +38,7 @@
       "priority": "high",
       "complexity": "L",
       "epic": "EPIC-002",
-      "updated_at": "2026-05-11T10:20:19.899Z"
+      "updated_at": "2026-05-11T10:20:32.006Z"
     },
     {
       "id": "T-007",
@@ -112,7 +112,7 @@
     }
   ],
   "adrs": [],
-  "last_commit": "c2c3710c709e3d590474b22a8a3785e59dec7428",
-  "updated_at": "2026-05-11T10:20:27.905Z",
+  "last_commit": "804bbf1f5f5e4740d5546ccbe3cefda392d9ef35",
+  "updated_at": "2026-05-11T10:20:37.080Z",
   "checksum": "8f40d3be2a0be46774fb163c029d5939d05beb5d329e82b306c9165cf48f6b0d"
 }
