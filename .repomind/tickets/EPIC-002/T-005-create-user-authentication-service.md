@@ -10,7 +10,7 @@ blocked_by: []
 blocks: []
 tags: []
 created_at: 2026-05-05T17:15:31.081Z
-updated_at: 2026-05-11T08:03:24.751Z
+updated_at: 2026-05-11T10:20:19.899Z
 arch_layer: cross-cutting
 risk_level: low
 requires_migration: false
@@ -31,4 +31,4 @@ Implement user authentication service with registration, login, and logout endpo
 
 
 ## Linked Commits
-- `e9b62ce9976b11fbfe0e319f60db74a695739e2a` — repomind: approved AI suggestion for T-005 (Confidence: 0.9%)
+- `7bd0816a6dbb486ffe98dd23545fcdc2124e5276` — docs(adr): draft architecture decision record for auth-service/server (Confidence: 0.62%)
