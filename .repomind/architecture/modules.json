@@ -1,68 +1,6 @@
 {
   "modules": [
     {
-      "id": "T-004",
-      "path": ".repomind/tickets/EPIC-002/T-004-design-and-implement-database-schema.md",
-      "name": "T_004_DESIGN_AND_IMPLEMENT_DATABASE_SCHEMA",
-      "summary": "Design and implement database schema, including initial migration scripts.",
-      "layer": "data",
-      "dependencies": [
-        "T-003"
-      ],
-      "is_hotspot": true
-    },
-    {
-      "id": "T-009",
-      "path": ".repomind/tickets/EPIC-003/T-009-integrate-state-management.md",
-      "name": "T_009_INTEGRATE_STATE_MANAGEMENT",
-      "summary": "Integrate state management solution to efficiently manage application state.",
-      "layer": "ui",
-      "dependencies": [
-        "T-008"
-      ],
-      "is_hotspot": false
-    },
-    {
-      "id": "README",
-      "path": "README.md",
-      "name": "README",
-      "summary": "Project overview for Sagenta, a conversational AI automations testing project.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-007",
-      "path": ".repomind/tickets/EPIC-002/T-007-create-refresh-token-endpoints.md",
-      "name": "T_007_CREATE_REFRESH_TOKEN_ENDPOINTS",
-      "summary": "Implement endpoints for rotating refresh tokens to maintain long-lived sessions.",
-      "layer": "service",
-      "dependencies": [
-        "T-006"
-      ],
-      "is_hotspot": true
-    },
-    {
-      "id": "ADR-6025-auth-service/routes/auth",
-      "path": "docs/adr/ADR-6025-auth-service/routes/auth.md",
-      "name": "ADR_6025_AUTH_SERVICE_ROUTES_AUTH",
-      "summary": "Documents architectural decision for improved user login and token refresh security.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": "T-011",
-      "path": ".repomind/tickets/EPIC-003/T-011-create-session-management-api-endpoints.md",
-      "name": "T_011_CREATE_SESSION_MANAGEMENT_API_ENDPOINTS",
-      "summary": "Create API endpoints for session management, listing and revoking sessions.",
-      "layer": "api",
-      "dependencies": [
-        "T-010"
-      ],
-      "is_hotspot": true
-    },
-    {
       "id": "auth-service/server",
       "path": "auth-service/server.js",
       "name": "AUTH_SERVICE_SERVER",
@@ -78,8 +16,8 @@
       "id": "auth-service/middleware/auth",
       "path": "auth-service/middleware/auth.js",
       "name": "AUTH_SERVICE_MIDDLEWARE_AUTH",
-      "summary": "Provides authentication and authorization middleware using JWT tokens.",
-      "layer": "service",
+      "summary": "Provides authentication and authorization middleware for Express routes.",
+      "layer": "util",
       "dependencies": [
         "../utils/tokens"
       ],
@@ -89,7 +27,7 @@
       "id": "auth-service/utils/tokens",
       "path": "auth-service/utils/tokens.js",
       "name": "AUTH_SERVICE_UTILS_TOKENS",
-      "summary": "Utility functions for generating and verifying JWT and refresh tokens.",
+      "summary": "Generates and verifies JWT access and refresh tokens.",
       "layer": "util",
       "dependencies": [],
       "is_hotspot": true
@@ -98,7 +36,7 @@
       "id": "auth-service/routes/auth",
       "path": "auth-service/routes/auth.js",
       "name": "AUTH_SERVICE_ROUTES_AUTH",
-      "summary": "Defines authentication routes for login, refresh, and logout.",
+      "summary": "Defines API routes for user login, token refresh, and logout.",
       "layer": "api",
       "dependencies": [
         "../users",
@@ -111,125 +49,8 @@
       "id": "auth-service/users",
       "path": "auth-service/users.js",
       "name": "AUTH_SERVICE_USERS",
-      "summary": "Hardcoded in-memory user data store for testing purposes.",
+      "summary": "In-memory user data store for testing purposes.",
       "layer": "data",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".env",
-      "path": ".env",
-      "name": "ENV",
-      "summary": "Environment variables configuration file.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-003/T-007-design-and-implement-ui-components",
-      "path": ".repomind/tickets/EPIC-003/T-007-design-and-implement-ui-components.md",
-      "name": "REPOMIND_TICKETS_EPIC_003_T_007_DESIGN_AND_IMPLEMENT_UI_COMPONENTS",
-      "summary": "Repomind ticket for designing and implementing UI components.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-002/T-005-design-jwt-structure-and-lifecycle",
-      "path": ".repomind/tickets/EPIC-002/T-005-design-jwt-structure-and-lifecycle.md",
-      "name": "REPOMIND_TICKETS_EPIC_002_T_005_DESIGN_JWT_STRUCTURE_AND_LIFECYCLE",
-      "summary": "Repomind ticket for designing JWT structure and lifecycle.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/releases/1-2",
-      "path": ".repomind/releases/1-2.md",
-      "name": "REPOMIND_RELEASES_1_2",
-      "summary": "Repomind release notes for version 1.2.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/adrs/adr-002",
-      "path": ".repomind/adrs/adr-002.md",
-      "name": "REPOMIND_ADRS_ADR_002",
-      "summary": "Repomind Architectural Decision Record for authentication strategy.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "docs/adr/ADR-6212-auth-service/middleware/auth",
-      "path": "docs/adr/ADR-6212-auth-service/middleware/auth.md",
-      "name": "DOCS_ADR_AUTH_SERVICE_MIDDLEWARE_AUTH",
-      "summary": "Documents JWT authentication and role-based authorization middleware for enhanced security.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": ".repomind/releases/sjdkskdj",
-      "path": ".repomind/releases/sjdkskdj.md",
-      "name": "REPOMIND_RELEASES_SJDKSKDJ",
-      "summary": "Draft release notes for version sjdkskdj.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-003/T-008-create-main-application-pages",
-      "path": ".repomind/tickets/EPIC-003/T-008-create-main-application-pages.md",
-      "name": "REPOMIND_TICKETS_EPIC_003_T_008_CREATE_MAIN_APPLICATION_PAGES",
-      "summary": "Defines task to create main application pages like home, dashboard, settings.",
-      "layer": "ui",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-004/T-011-configure-monitoring-and-logging",
-      "path": ".repomind/tickets/EPIC-004/T-011-configure-monitoring-and-logging.md",
-      "name": "REPOMIND_TICKETS_EPIC_004_T_011_CONFIGURE_MONITORING_AND_LOGGING",
-      "summary": "Defines task to configure application monitoring and logging for performance and errors.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-001/T-004-integrate-oauth-login-with-frontend",
-      "path": ".repomind/tickets/EPIC-001/T-004-integrate-oauth-login-with-frontend.md",
-      "name": "REPOMIND_TICKETS_EPIC_001_T_004_INTEGRATE_OAUTH_LOGIN_WITH_FRONTEND",
-      "summary": "Defines task to integrate Google and GitHub OAuth login with frontend UI.",
-      "layer": "ui",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": ".repomind/architecture/tech-stack",
-      "path": ".repomind/architecture/tech-stack.yml",
-      "name": "REPOMIND_ARCHITECTURE_TECH_STACK",
-      "summary": "Defines the project's technology stack, including languages and frameworks.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/tickets/EPIC-003/T-012-integrate-session-management-with-frontend",
-      "path": ".repomind/tickets/EPIC-003/T-012-integrate-session-management-with-frontend.md",
-      "name": "REPOMIND_TICKETS_EPIC_003_T_012_INTEGRATE_SESSION_MANAGEMENT_WITH_FRONTEND",
-      "summary": "Defines task to integrate session management page with frontend and backend services.",
-      "layer": "ui",
-      "dependencies": [],
-      "is_hotspot": true
-    },
-    {
-      "id": ".repomind/adrs/adr-003",
-      "path": ".repomind/adrs/adr-003.md",
-      "name": "REPOMIND_ADRS_ADR_003",
-      "summary": "Documents the decision to use Redux for frontend state management.",
-      "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
@@ -237,16 +58,223 @@
       "id": ".repomind/.meta/settings",
       "path": ".repomind/.meta/settings.json",
       "name": "REPOMIND_META_SETTINGS",
-      "summary": "Configures repository settings for commit behavior and author details.",
+      "summary": "Configuration for RepoMind bot's commit behavior.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": ".repomind/adrs/adr-001",
+      "id": ".repomind/.meta/ticket-index",
+      "path": ".repomind/.meta/ticket-index.json",
+      "name": "REPOMIND_META_TICKET_INDEX",
+      "summary": "Index of project tickets with their metadata.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/.meta/sync-state",
+      "path": ".repomind/.meta/sync-state.json",
+      "name": "REPOMIND_META_SYNC_STATE",
+      "summary": "Stores synchronization state for RepoMind.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".env",
+      "path": ".env",
+      "name": "ENV_CONFIG",
+      "summary": "Environment variables for application configuration.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/architecture/onboarding",
+      "path": ".repomind/architecture/onboarding.md",
+      "name": "REPOMIND_ARCHITECTURE_ONBOARDING",
+      "summary": "Placeholder for project onboarding documentation.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "docs/adr/ADR-6025-auth-service/routes/auth",
+      "path": "docs/adr/ADR-6025-auth-service/routes/auth.md",
+      "name": "DOCS_ADR_ADR_6025_AUTH_SERVICE_ROUTES_AUTH",
+      "summary": "Documents architectural decision for improved user login and token refresh security.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": ".repomind/tickets/EPIC-002/T-004-design-and-implement-database-schema",
+      "path": ".repomind/tickets/EPIC-002/T-004-design-and-implement-database-schema.md",
+      "name": "REPOMIND_TICKETS_EPIC_002_T_004_DESIGN_AND_IMPLEMENT_DATABASE_SCHEMA",
+      "summary": "Ticket for designing and implementing database schema with initial migration scripts.",
+      "layer": "data",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": ".repomind/tickets/EPIC-002/T-006-implement-restful-api-endpoints",
+      "path": ".repomind/tickets/EPIC-002/T-006-implement-restful-api-endpoints.md",
+      "name": "REPOMIND_TICKETS_EPIC_002_T_006_IMPLEMENT_RESTFUL_API_ENDPOINTS",
+      "summary": "Ticket for implementing RESTful API endpoints for core entity CRUD operations.",
+      "layer": "api",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": "docs/adr/ADR-4183-auth-service/server",
+      "path": "docs/adr/ADR-4183-auth-service/server.md",
+      "name": "DOCS_ADR_ADR_4183_AUTH_SERVICE_SERVER",
+      "summary": "Documents architectural decision for authentication service server initialization and routes.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": ".repomind/tickets/EPIC-004/T-010-set-up-continuous-integration-and-deployment",
+      "path": ".repomind/tickets/EPIC-004/T-010-set-up-continuous-integration-and-deployment.md",
+      "name": "REPOMIND_TICKETS_EPIC_004_T_010_SET_UP_CONTINUOUS_INTEGRATION_AND_DEPLOYMENT",
+      "summary": "Ticket for setting up CI/CD pipelines for automated testing and deployment.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": ".repomind/tickets/EPIC-004/T-011-configure-monitoring-and-logging",
+      "path": ".repomind/tickets/EPIC-004/T-011-configure-monitoring-and-logging.md",
+      "name": "REPOMIND_TICKETS_EPIC_004_T_011_CONFIGURE_MONITORING_AND_LOGGING",
+      "summary": "Ticket for configuring monitoring and logging to track performance and errors.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": ".repomind/architecture/modules",
+      "path": ".repomind/architecture/modules.json",
+      "name": "REPOMIND_ARCHITECTURE_MODULES",
+      "summary": "Defines architectural modules, their dependencies, layers, and hotspots.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": "adr-001",
       "path": ".repomind/adrs/adr-001.md",
-      "name": "REPOMIND_ADRS_ADR_001",
-      "summary": "Documents the decision to use PostgreSQL as the primary database technology.",
+      "name": "ADR_001",
+      "summary": "Documents decision to use PostgreSQL for database, noting pros and cons.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "config",
+      "path": ".repomind/config.yml",
+      "name": "REPOMIND_CONFIG",
+      "summary": "Configures project settings, AI tone, changelog, bot, tickets, and integrations.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-001-set-up-oauth-client-for-google",
+      "path": ".repomind/tickets/EPIC-001/T-001-set-up-oauth-client-for-google.md",
+      "name": "T_001_SET_UP_OAUTH_CLIENT_FOR_GOOGLE",
+      "summary": "Defines task to configure Google OAuth client for authentication service.",
+      "layer": "service",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "adr-003",
+      "path": ".repomind/adrs/adr-003.md",
+      "name": "ADR_003",
+      "summary": "Documents decision to use Redux for frontend state management.",
+      "layer": "ui",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-007-design-and-implement-ui-components",
+      "path": ".repomind/tickets/EPIC-003/T-007-design-and-implement-ui-components.md",
+      "name": "T_007_DESIGN_AND_IMPLEMENT_UI_COMPONENTS",
+      "summary": "Defines task to design and implement reusable UI components for frontend.",
+      "layer": "ui",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "tech-stack",
+      "path": ".repomind/architecture/tech-stack.yml",
+      "name": "TECH_STACK",
+      "summary": "Lists current programming languages, frameworks, databases, and services used.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "sjdkskdj",
+      "path": ".repomind/releases/sjdkskdj.md",
+      "name": "RELEASE_SJDKSKDJ",
+      "summary": "Draft release notes for version \"sjdkskdj\".",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-009-integrate-state-management",
+      "path": ".repomind/tickets/EPIC-003/T-009-integrate-state-management.md",
+      "name": "T_009_INTEGRATE_STATE_MANAGEMENT",
+      "summary": "Defines task to integrate state management solution into UI layer.",
+      "layer": "ui",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "adr-002",
+      "path": ".repomind/adrs/adr-002.md",
+      "name": "ADR_002",
+      "summary": "Documents decision to use JWT for stateless authentication strategy.",
+      "layer": "service",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-13-simple-demo-website-creation",
+      "path": ".repomind/tickets/T-13-simple-demo-website-creation.md",
+      "name": "T_13_SIMPLE_DEMO_WEBSITE_CREATION",
+      "summary": "Defines task to create a basic static demo website for testing.",
+      "layer": "ui",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-002/T-005-design-jwt-structure-and-lifecycle",
+      "path": ".repomind/tickets/EPIC-002/T-005-design-jwt-structure-and-lifecycle.md",
+      "name": "EPIC_002_T_005_DESIGN_JWT_STRUCTURE_AND_LIFECYCLE",
+      "summary": "Defines JWT structure, claims, expiration, and lifecycle for rotation/refresh.",
+      "layer": "service",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": "EPIC-001/T-003-create-oauth-login-endpoints",
+      "path": ".repomind/tickets/EPIC-001/T-003-create-oauth-login-endpoints.md",
+      "name": "EPIC_001_T_003_CREATE_OAUTH_LOGIN_ENDPOINTS",
+      "summary": "Creates API endpoints for Google and GitHub OAuth login requests.",
+      "layer": "api",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-001/T-001-initialize-project-with-basic-structure",
+      "path": ".repomind/tickets/EPIC-001/T-001-initialize-project-with-basic-structure.md",
+      "name": "EPIC_001_T_001_INITIALIZE_PROJECT_WITH_BASIC_STRUCTURE",
+      "summary": "Initializes project with basic directory structure, including src, tests, config.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
@@ -255,53 +283,62 @@
       "id": "EPIC-003/T-010-implement-session-management-backend",
       "path": ".repomind/tickets/EPIC-003/T-010-implement-session-management-backend.md",
       "name": "EPIC_003_T_010_IMPLEMENT_SESSION_MANAGEMENT_BACKEND",
-      "summary": "Ticket to implement backend services for user session management.",
+      "summary": "Implements backend services for user session management: list and revoke sessions.",
       "layer": "service",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "ADR-4183-auth-service/server",
-      "path": "docs/adr/ADR-4183-auth-service/server.md",
-      "name": "ADR_4183_AUTH_SERVICE_SERVER",
-      "summary": "ADR for authentication service server initialization, routes, and middleware.",
+      "id": "EPIC-003/T-012-integrate-session-management-with-frontend",
+      "path": ".repomind/tickets/EPIC-003/T-012-integrate-session-management-with-frontend.md",
+      "name": "EPIC_003_T_012_INTEGRATE_SESSION_MANAGEMENT_WITH_FRONTEND",
+      "summary": "Integrates session management page into frontend, connecting to backend services.",
+      "layer": "ui",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-002/T-005-create-user-authentication-service",
+      "path": ".repomind/tickets/EPIC-002/T-005-create-user-authentication-service.md",
+      "name": "EPIC_002_T_005_CREATE_USER_AUTHENTICATION_SERVICE",
+      "summary": "Implements user authentication service with registration, login, and logout endpoints.",
+      "layer": "service",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": "EPIC-003/T-011-create-session-management-api-endpoints",
+      "path": ".repomind/tickets/EPIC-003/T-011-create-session-management-api-endpoints.md",
+      "name": "EPIC_003_T_011_CREATE_SESSION_MANAGEMENT_API_ENDPOINTS",
+      "summary": "Creates API endpoints for interacting with session management services.",
       "layer": "api",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "EPIC-001/T-001-set-up-oauth-client-for-google",
-      "path": ".repomind/tickets/EPIC-001/T-001-set-up-oauth-client-for-google.md",
-      "name": "EPIC_001_T_001_SET_UP_OAUTH_CLIENT_FOR_GOOGLE",
-      "summary": "Ticket to configure Google OAuth client with credentials and redirect URI.",
-      "layer": "service",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "config",
-      "path": ".repomind/config.yml",
-      "name": "REPOMIND_CONFIG",
-      "summary": "Configuration for the RepoMind project, including AI, changelog, and tickets.",
+      "id": "ADR-6212-auth-service/middleware/auth",
+      "path": "docs/adr/ADR-6212-auth-service/middleware/auth.md",
+      "name": "ADR_6212_AUTH_SERVICE_MIDDLEWARE_AUTH",
+      "summary": "Documents JWT authentication, role-based authorization, and API security middleware.",
       "layer": "infra",
       "dependencies": [],
-      "is_hotspot": false
+      "is_hotspot": true
     },
     {
-      "id": "sync-state",
-      "path": ".repomind/.meta/sync-state.json",
-      "name": "REPOMIND_SYNC_STATE",
-      "summary": "Stores RepoMind's synchronization state, including initialization and last scan.",
-      "layer": "infra",
+      "id": "EPIC-002/T-008-integrate-token-refresh-with-frontend",
+      "path": ".repomind/tickets/EPIC-002/T-008-integrate-token-refresh-with-frontend.md",
+      "name": "EPIC_002_T_008_INTEGRATE_TOKEN_REFRESH_WITH_FRONTEND",
+      "summary": "Updates frontend to automatically handle token refresh for continuous user sessions.",
+      "layer": "ui",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "ADR-5720-auth-service/utils/tokens",
-      "path": "docs/adr/ADR-5720-auth-service/utils/tokens.md",
-      "name": "ADR_5720_AUTH_SERVICE_UTILS_TOKENS",
-      "summary": "ADR for improved token generation and verification in auth service.",
-      "layer": "util",
+      "id": "v1-3",
+      "path": ".repomind/releases/v1-3.md",
+      "name": "V1_3",
+      "summary": "Release notes for v1.3, focusing on agentic skills integration.",
+      "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
@@ -309,143 +346,94 @@
       "id": "auth-service/package",
       "path": "auth-service/package.json",
       "name": "AUTH_SERVICE_PACKAGE",
-      "summary": "Defines auth-service project metadata and lists Node.js dependencies.",
+      "summary": "Defines Node.js auth service dependencies: express, jsonwebtoken, cors, dotenv.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "v1-3",
-      "path": ".repomind/releases/v1-3.md",
-      "name": "REPOMIND_RELEASE_V1_3",
-      "summary": "Draft release notes for Agentic Skills feature in v1.3.",
+      "id": "README",
+      "path": "README.md",
+      "name": "README",
+      "summary": "Project overview for Sagenta, a conversational AI automation system.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "EPIC-004/T-010-set-up-continuous-integration-and-deployment",
-      "path": ".repomind/tickets/EPIC-004/T-010-set-up-continuous-integration-and-deployment.md",
-      "name": "EPIC_004_T_010_SET_UP_CONTINUOUS_INTEGRATION_AND_DEPLOYMENT",
-      "summary": "Ticket to set up CI/CD pipelines for automated testing and deployment.",
+      "id": ".repomind/releases/1-2",
+      "path": ".repomind/releases/1-2.md",
+      "name": "REPOMIND_RELEASES_1_2",
+      "summary": "Draft release notes for version 1.2, focusing on agentic skills.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "ticket-index",
-      "path": ".repomind/.meta/ticket-index.json",
-      "name": "REPOMIND_TICKET_INDEX",
-      "summary": "Index of all project tickets with their metadata and paths.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "T-13-simple-demo-website-creation",
-      "path": ".repomind/tickets/T-13-simple-demo-website-creation.md",
-      "name": "DEMO_WEBSITE_CREATION",
-      "summary": "Create a basic demo website with clean, minimal design for testing.",
+      "id": ".repomind/tickets/EPIC-003/T-008-create-main-application-pages",
+      "path": ".repomind/tickets/EPIC-003/T-008-create-main-application-pages.md",
+      "name": "REPOMIND_TICKETS_EPIC_003_T_008_CREATE_MAIN_APPLICATION_PAGES",
+      "summary": "Ticket: Create main application pages (home, dashboard, settings).",
       "layer": "ui",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "EPIC-002/T-006-implement-restful-api-endpoints",
-      "path": ".repomind/tickets/EPIC-002/T-006-implement-restful-api-endpoints.md",
-      "name": "RESTFUL_API_ENDPOINTS",
-      "summary": "Implement RESTful API endpoints for CRUD operations on core entities.",
-      "layer": "api",
-      "dependencies": [
-        "T-005"
-      ],
-      "is_hotspot": true
-    },
-    {
-      "id": "EPIC-002/T-008-integrate-token-refresh-with-frontend",
-      "path": ".repomind/tickets/EPIC-002/T-008-integrate-token-refresh-with-frontend.md",
-      "name": "AUTH_UI_TOKEN_REFRESH",
-      "summary": "Update frontend to handle automatic token refresh for active sessions.",
+      "id": ".repomind/tickets/EPIC-001/T-004-integrate-oauth-login-with-frontend",
+      "path": ".repomind/tickets/EPIC-001/T-004-integrate-oauth-login-with-frontend.md",
+      "name": "REPOMIND_TICKETS_EPIC_001_T_004_INTEGRATE_OAUTH_LOGIN_WITH_FRONTEND",
+      "summary": "Ticket: Integrate Google/GitHub OAuth login with frontend UI components.",
       "layer": "ui",
-      "dependencies": [
-        "T-007"
-      ],
-      "is_hotspot": true
-    },
-    {
-      "id": "onboarding",
-      "path": ".repomind/architecture/onboarding.md",
-      "name": "ONBOARDING",
-      "summary": "Placeholder for initial codebase architecture and getting started guide.",
-      "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "EPIC-001/T-001-initialize-project-with-basic-structure",
-      "path": ".repomind/tickets/EPIC-001/T-001-initialize-project-with-basic-structure.md",
-      "name": "PROJECT_INITIALIZATION",
-      "summary": "Create basic project directory structure and initial README.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "EPIC-001/T-003-configure-development-environment",
-      "path": ".repomind/tickets/EPIC-001/T-003-configure-development-environment.md",
-      "name": "DEV_ENVIRONMENT_CONFIG",
-      "summary": "Set up development environment with tools, dependencies, and Docker.",
-      "layer": "infra",
-      "dependencies": [
-        "T-002"
-      ],
-      "is_hotspot": false
-    },
-    {
-      "id": "EPIC-001/T-002-set-up-version-control",
+      "id": ".repomind/tickets/EPIC-001/T-002-set-up-version-control",
       "path": ".repomind/tickets/EPIC-001/T-002-set-up-version-control.md",
-      "name": "VERSION_CONTROL_SETUP",
-      "summary": "Initialize Git repository and add .gitignore file.",
+      "name": "REPOMIND_TICKETS_EPIC_001_T_002_SET_UP_VERSION_CONTROL",
+      "summary": "Ticket: Initialize Git repository and set up .gitignore file.",
       "layer": "infra",
-      "dependencies": [
-        "T-001"
-      ],
+      "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": "EPIC-002/T-005-create-user-authentication-service",
-      "path": ".repomind/tickets/EPIC-002/T-005-create-user-authentication-service.md",
-      "name": "USER_AUTH_SERVICE",
-      "summary": "Implement user authentication service with registration, login, and logout endpoints.",
+      "id": ".repomind/tickets/EPIC-002/T-006-implement-jwt-generation-and-verification",
+      "path": ".repomind/tickets/EPIC-002/T-006-implement-jwt-generation-and-verification.md",
+      "name": "REPOMIND_TICKETS_EPIC_002_T_006_IMPLEMENT_JWT_GENERATION_AND_VERIFICATION",
+      "summary": "Ticket: Implement JWT generation, verification, expiration, and rotation services.",
       "layer": "service",
       "dependencies": [],
-      "is_hotspot": true
+      "is_hotspot": false
     },
     {
-      "id": "EPIC-001/T-003-create-oauth-login-endpoints",
-      "path": ".repomind/tickets/EPIC-001/T-003-create-oauth-login-endpoints.md",
-      "name": "AUTH_API_OAUTH_LOGIN",
-      "summary": "Create API endpoints for Google and GitHub OAuth login requests.",
-      "layer": "api",
-      "dependencies": [
-        "T-001",
-        "T-002"
-      ],
-      "is_hotspot": true
+      "id": ".repomind/tickets/EPIC-001/T-003-configure-development-environment",
+      "path": ".repomind/tickets/EPIC-001/T-003-configure-development-environment.md",
+      "name": "REPOMIND_TICKETS_EPIC_001_T_003_CONFIGURE_DEVELOPMENT_ENVIRONMENT",
+      "summary": "Ticket: Configure development environment with tools, dependencies, and Docker.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
     },
     {
-      "id": "EPIC-002/T-006-implement-jwt-generation-and-verification",
-      "path": ".repomind/tickets/EPIC-002/T-006-implement-jwt-generation-and-verification.md",
-      "name": "AUTH_SERVICE_JWT",
-      "summary": "Implement services for JWT generation, verification, expiration, and rotation.",
+      "id": "docs/adr/ADR-5720-auth-service/utils/tokens",
+      "path": "docs/adr/ADR-5720-auth-service/utils/tokens.md",
+      "name": "DOCS_ADR_ADR_5720_AUTH_SERVICE_UTILS_TOKENS",
+      "summary": "ADR: Documents security fix for improved token generation and verification.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/tickets/EPIC-002/T-007-create-refresh-token-endpoints",
+      "path": ".repomind/tickets/EPIC-002/T-007-create-refresh-token-endpoints.md",
+      "name": "REPOMIND_TICKETS_EPIC_002_T_007_CREATE_REFRESH_TOKEN_ENDPOINTS",
+      "summary": "Ticket: Implement refresh token endpoints for secure, long-lived user sessions.",
       "layer": "service",
-      "dependencies": [
-        "T-005"
-      ],
-      "is_hotspot": true
+      "dependencies": [],
+      "is_hotspot": false
     }
   ],
-  "generated_at": "2026-05-11T08:07:01.520Z",
+  "generated_at": "2026-05-11T08:14:46.668Z",
   "strategy": "deep-read",
   "anchor_count": 47
 }
