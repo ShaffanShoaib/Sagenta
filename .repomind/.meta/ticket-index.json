@@ -108,11 +108,11 @@
       "priority": "medium",
       "complexity": "M",
       "epic": "EPIC-003",
-      "updated_at": "2026-05-11T10:19:44.996Z"
+      "updated_at": "2026-05-11T10:20:13.240Z"
     }
   ],
   "adrs": [],
-  "last_commit": "95ea82028f470448e4d3b735ead5e5f2cccd77d6",
-  "updated_at": "2026-05-11T10:19:50.507Z",
+  "last_commit": "38b4bff23bd892d6de19abbf7882e5563e191585",
+  "updated_at": "2026-05-11T10:20:18.270Z",
   "checksum": "8f40d3be2a0be46774fb163c029d5939d05beb5d329e82b306c9165cf48f6b0d"
 }
