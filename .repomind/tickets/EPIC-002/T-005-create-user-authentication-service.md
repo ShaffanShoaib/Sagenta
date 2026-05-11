@@ -10,7 +10,7 @@ blocked_by: []
 blocks: []
 tags: []
 created_at: 2026-05-05T17:15:31.081Z
-updated_at: 2026-05-11T10:20:32.006Z
+updated_at: 2026-05-11T10:20:38.865Z
 arch_layer: cross-cutting
 risk_level: low
 requires_migration: false
@@ -31,4 +31,4 @@ Implement user authentication service with registration, login, and logout endpo
 
 
 ## Linked Commits
-- `2706b285344c9323739e8a46ae046c5e8968c6d2` — docs(adr): draft architecture decision record for auth-service/middleware/auth (Confidence: 0.75%)
+- `7a0b11aa5d5875073eff5a9a8baaf2440bb12419` — docs(adr): draft architecture decision record for auth-service/routes/auth (Confidence: 0.63%)
