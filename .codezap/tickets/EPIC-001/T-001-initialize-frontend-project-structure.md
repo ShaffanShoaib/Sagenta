@@ -2,7 +2,7 @@
 id: T-001
 epic: EPIC-001
 title: Initialize Frontend Project Structure
-status: todo
+status: done
 priority: high
 complexity: M
 commits: []
@@ -15,7 +15,7 @@ blocks:
   - T-011
 tags: []
 created_at: 2026-06-07T11:34:19.141Z
-updated_at: 2026-06-07T11:34:19.141Z
+updated_at: 2026-06-07T11:38:29.519Z
 arch_layer: ui
 risk_level: low
 requires_migration: false
