@@ -4,11 +4,11 @@
       "id": "T-001",
       "path": ".codezap/tickets/EPIC-001/T-001-initialize-frontend-project-structure.md",
       "title": "Initialize Frontend Project Structure",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "complexity": "M",
       "epic": "EPIC-001",
-      "updated_at": "2026-06-07T11:34:19.141Z"
+      "updated_at": "2026-06-07T11:38:29.519Z"
     },
     {
       "id": "T-002",
@@ -152,7 +152,7 @@
     }
   ],
   "adrs": [],
-  "last_commit": "7dd71101fce25444589cd2a8b4d56f59aee3ad36",
-  "updated_at": "2026-06-07T11:34:30.304Z",
-  "checksum": "bef5209b19974d2c95a4c53f5b1309888435b0e74da1d568011c0f7e7d4dad29"
+  "last_commit": "e7a6052d9edfbf14d985cdf4515093d7fc3738d7",
+  "updated_at": "2026-06-07T11:38:33.500Z",
+  "checksum": "ce6b3ef0e7daf11eebbe747d7d83558d7fec1d8ce849152341d1726035eb217a"
 }
